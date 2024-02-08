@@ -77,6 +77,22 @@ const AdoptionForm: React.FC = () => {
               htmlFor="name"
               className="mb-2 block text-gray-700 font-semibold"
             >
+              Dog&apos;s Name:
+            </label>
+            <input
+              type="text"
+              id="dogname"
+              name="dogname"
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label
+              htmlFor="name"
+              className="mb-2 block text-gray-700 font-semibold"
+            >
               Dog&apos;s Bread Name:
             </label>
             <input

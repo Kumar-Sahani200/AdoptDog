@@ -1,4 +1,4 @@
-This is a project for making an ease in Dog Adoption in India with
+This is a project for easing the process of Dog Adoption in India
 
 ## This Project is Live and being used!!!
 

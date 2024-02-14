@@ -4,7 +4,7 @@ This is a project for easing the process of Dog Adoption in India
 
 To learn more or use this Project, take a look at the following link:
 
-- [https://adoptadoginindia.vercel.app/](adoptadoginindia.vercel.app) - Live Demo
+- [adoptadoginindia.vercel.app](https://adoptadoginindia.vercel.app/) - Live Demo
 
 - Tech stack used in this - NextJS app router 14.1, Typescipt, ShadCN, FormBold, MonogDB Atlas
 

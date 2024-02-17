@@ -66,7 +66,7 @@ export default function ProductCard() {
                   href={"https://aashrayforanimals.org.in/"}
                   className="bg-[#6d6d6d] hover:bg-[#11101d] text-white text-sm  py-2 px-3 rounded-full"
                 >
-                  Donate to the Shelter
+                  Donate - Shelter
                 </Link>
               </CardFooter>
             </CardContent>

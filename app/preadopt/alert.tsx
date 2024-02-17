@@ -17,7 +17,7 @@ export default function AlertRepo() {
     <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button className="bg-[#6d6d6d] hover:bg-[#11101d] text-white text-sm  py-2 px-3 rounded-full">
-          Contact Shelter
+          Contact
         </Button>
       </AlertDialogTrigger>
       <AlertDialogContent>

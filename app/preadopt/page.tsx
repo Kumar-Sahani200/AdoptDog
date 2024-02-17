@@ -22,7 +22,7 @@ export default function ProductCard() {
       </div>
       <div className="container mx-auto flex justify-center mb-40">
         <div className=" mx-auto mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="bg-gradient-to-r from-[#929090] to-[#dadadd] max-w-md rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+          <Card className="bg-gradient-to-r from-[#c3bcbc] to-[#f3f3f5] max-w-md rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
             <CardHeader className="relative p-0">
               <div className="overflow-y-scroll h-60">
                 <Image

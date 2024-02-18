@@ -34,7 +34,7 @@ export default function ProductCard() {
                 />
               </div>
               <div className="absolute bottom-0 left-0 bg-gradient-to-r from-[#6d6d6d] to-[#11101d] p-1 text-white opacity-22">
-                Drugapur
+                Durgapur
               </div>
             </CardHeader>
             <CardContent className="p-4">
@@ -46,7 +46,7 @@ export default function ProductCard() {
                 Yes
                 <br />
                 <span className="font-bold">Bread: </span>
-                indi
+                Indie
                 <br />
                 <span className="font-bold">Gender: </span>
                 Female
@@ -55,7 +55,7 @@ export default function ProductCard() {
                 Yes - No Right Leg
                 <br />
                 <span className="font-bold">Shelter/Street: </span>
-                Shelter - Aashray For Animals
+                Shelter - Durgapur Aashray For Animals
                 <br />
               </CardDescription>
 

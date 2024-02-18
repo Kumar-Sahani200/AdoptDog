@@ -13,7 +13,7 @@ export default function Home() {
           </p>
 
           <Image
-            src={"/images/dogs.jpg"}
+            src={"/images/dogs.jpeg"}
             width={1200}
             height={400}
             alt="step1"

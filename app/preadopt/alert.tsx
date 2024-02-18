@@ -32,7 +32,7 @@ export default function AlertRepo() {
           <AlertDialogCancel>Cancel</AlertDialogCancel>
 
           <AlertDialogAction>
-            <Link href={"tel:+919609600920"}>Call</Link>
+            <a href={"tel:+919609600920"}>Call</a>
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

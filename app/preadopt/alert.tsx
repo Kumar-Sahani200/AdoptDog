@@ -28,15 +28,18 @@ export default function AlertRepo() {
             between Monday to Friday
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
+        <AlertDialogCancel>Cancel</AlertDialogCancel>
+        <Link
+          href="tel:+919609600920"
+          className="mx-auto bg-black w-full py-3 text-white text-center"
+          target="_blank"
+        >
+          Call
+        </Link>
 
-          <AlertDialogAction>
-            <Link href="tel:+919609600920" target="_blank">
-              Call
-            </Link>
-          </AlertDialogAction>
-        </AlertDialogFooter>
+        {/* <AlertDialogFooter>
+          <AlertDialogAction></AlertDialogAction>
+        </AlertDialogFooter> */}
       </AlertDialogContent>
     </AlertDialog>
   );

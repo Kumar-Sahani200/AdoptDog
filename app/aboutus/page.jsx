@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
-const AboutUs: React.FC = () => {
+const AboutUs = () => {
   return (
     <div className="min-h-screen py-12 ">
-      <div className="container mx-auto p-8 bg-white rounded-md shadow-lg">
+      <div className="container mx-auto p-8 bg-[#fef0e0] rounded-md shadow-lg">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-extrabold text-gray-800">About Us</h2>
           <p className="text-gray-600 mt-2">
@@ -52,7 +52,7 @@ const AboutUs: React.FC = () => {
           <h3 className="text-2xl font-semibold text-gray-800 mb-3">
             Additional Details
           </h3>
-          <div className="bg-gray-50 p-6 rounded-md shadow-md">
+          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md">
             <p className="text-gray-700">
               <strong>Description:</strong> Building network for adoption of
               dogs, cats, rabbits, squirrel. You can share pictures and location
@@ -60,13 +60,13 @@ const AboutUs: React.FC = () => {
               details you know about that animal.
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-md shadow-md mt-4">
+          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
             <p className="text-gray-700">
               We are presently working in locations in Durgapur, for example,
               Bidhannagar or Bidhannagar market to be more precise.
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-md shadow-md mt-4">
+          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
             <p className="text-gray-700">
               <strong>Pre-Adoption:</strong> Details we need for searching the
               potential family for the animal, like in which situation the
@@ -74,21 +74,21 @@ const AboutUs: React.FC = () => {
               information.
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-md shadow-md mt-4">
+          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
             <p className="text-gray-700">
               <strong>Post-Adoption:</strong> Please don&apos;t abandon the dogs
               you adopt, as dogs are territorial and other dogs may cause
               serious harm while you relocate or abandon them.
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-md shadow-md mt-4">
+          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
             <p className="text-gray-700">
               <strong>Pre-Adoption Care:</strong> If you are feeding the puppy
               or the dog, did you deworm or vaccinate the dogs? Provide details
               about the dates of vaccination and deworming.
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-md shadow-md mt-4">
+          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
             <p className="text-gray-700">
               Shelters provide wonderful services like deworming, vaccinating,
               and sterilizing before promoting a dog or cat for adoption.
@@ -107,7 +107,7 @@ const AboutUs: React.FC = () => {
               and other surgeries in B-Zone.
             </p>
           </div>
-          <div className="bg-gray-50 p-6 rounded-md shadow-md mt-4">
+          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
             <p className="text-gray-700">
               <strong>Contact Details:</strong>
               <br />

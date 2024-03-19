@@ -9,7 +9,7 @@ import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 const menus = [
   { title: "Home", path: "/" },
-  { title: "PreAdopt", path: "/preadopt" },
+  { title: "Adopt", path: "/adopt" },
   { title: "About Us", path: "/aboutus" },
   { title: "Post", path: "/post" },
 ];
@@ -20,8 +20,8 @@ export async function Navbar() {
   return (
     <div className="flex items-center justify-between px-4 py-2 bg-[#fef0e0] dark:bg-gray-800">
       <Link className="flex items-center gap-2" href="/">
-        <h1 className="text-3xl font-bold text-[#ff8802]">
-          Adopt <span className="text-[#723225]">Paw</span>
+        <h1 className="text-3xl font-bold text-[#ff8802] font-emblema_one">
+          Adopt <span className="text-[#723225]">Paw</span>{" "}
         </h1>
       </Link>
       <div className="hidden lg:flex gap-4 ">
@@ -31,14 +31,16 @@ export async function Navbar() {
               className="text-lg text-black bg-[#fef0e0] font-medium hover:underline underline-offset-4"
               key={index}
             >
-              <Link href={item.path}>{item.title}</Link>
+              <Link href={item.path} className="font-nova_slim">
+                {item.title}
+              </Link>
             </Button>
           ))}
         </div>
         <SignedIn>
           <div>
             <div className="flex justify-center mx-auto gap-x-5">
-              <Button className="w-fit bg-secondary text-primary hover:text-secondary hover:bg-primary">
+              <Button className="font-nova_slim w-fit bg-secondary text-primary hover:text-secondary hover:bg-primary">
                 <Link href={"/dashboard"}>Dashboard</Link>
               </Button>
               <div className="mt-1">
@@ -51,11 +53,15 @@ export async function Navbar() {
           <div className="flex justify-center mx-auto gap-x-5">
             <Button className="w-fit bg-primary hover:text-primary hover:bg-secondary">
               {/* <LoginLink postLoginRedirectURL="/dashboard">Sign in</LoginLink> */}
-              <Link href={"/sign-in"}>Sign in</Link>
+              <Link href={"/sign-in"} className="font-nova_slim">
+                Sign in
+              </Link>
             </Button>
             <Button className="w-fit bg-secondary text-primary hover:text-secondary hover:bg-primary">
               {/* <RegisterLink>Sign up</RegisterLink> */}
-              <Link href={"/sign-up"}>Sign up</Link>
+              <Link href={"/sign-up"} className="font-nova_slim">
+                Sign up
+              </Link>
             </Button>
           </div>
         </SignedOut>
@@ -72,7 +78,7 @@ export async function Navbar() {
             {menus.map((item, index) => (
               <Link
                 key={index}
-                className="text-xl font-medium hover:underline underline-offset-4 mb-2.5"
+                className="font-nova_slim text-xl font-medium hover:underline underline-offset-4 mb-2.5"
                 href={item.path}
               >
                 {item.title}
@@ -83,7 +89,9 @@ export async function Navbar() {
               <div>
                 <div className="flex justify-center mx-auto gap-x-5 mt-5">
                   <Button className="w-fit bg-secondary text-primary hover:text-secondary hover:bg-primary">
-                    <Link href={"/dashboard"}>Dashboard</Link>
+                    <Link href={"/dashboard"} className="font-nova_slim">
+                      Dashboard
+                    </Link>
                   </Button>
                   <div className="mt-1">
                     <UserButton afterSignOutUrl="/" />
@@ -95,11 +103,15 @@ export async function Navbar() {
               <div className="flex justify-center mx-auto gap-x-5 mt-5">
                 <Button className="w-fit bg-primary hover:text-primary hover:bg-secondary">
                   {/* <LoginLink>Sign in</LoginLink> */}
-                  <Link href={"/sign-in"}>Sign in</Link>
+                  <Link href={"/sign-in"} className="font-nova_slim">
+                    Sign in
+                  </Link>
                 </Button>
                 <Button className="w-fit bg-secondary text-primary hover:text-secondary hover:bg-primary">
                   {/* <RegisterLink>Sign up</RegisterLink> */}
-                  <Link href={"/sign-up"}>Sign up</Link>
+                  <Link href={"/sign-up"} className="font-nova_slim">
+                    Sign up
+                  </Link>
                 </Button>
               </div>
             </SignedOut>

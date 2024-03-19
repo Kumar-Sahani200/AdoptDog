@@ -33,7 +33,7 @@ export async function POST(req) {
     );
   } catch (error) {
     return new Response(
-      JSON.stringify({ message: "Failed to Post form data to the DB" })
+      JSON.stringify({ message: "Failed to Post form data to the DB" }, error)
     );
   }
 }

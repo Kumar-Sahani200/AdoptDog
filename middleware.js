@@ -5,10 +5,11 @@ export default authMiddleware({
   publicRoutes: [
     "/",
     "/aboutus",
-    "/preadopt",
+    "/adopt",
     "/api/webhooks(.*)",
     "/api/createUser",
     "/api/formData",
+    "/api/edgestore(.*)",
   ],
   // Routes that can always be accessed, and have
   // no authentication information

@@ -1,94 +1,98 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { AboutEngineer } from "@/components/aboutEngineer";
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen py-12 ">
       <div className="container mx-auto p-8 bg-[#fef0e0] rounded-md shadow-lg">
         <div className="text-center mb-8">
-          <h2 className="text-4xl font-extrabold text-gray-800">About Us</h2>
-          <p className="text-gray-600 mt-2">
-            We are an organization dedicated to helping people adopt dogs and
-            facilitating the adoption process for street dogs.
+          <h2 className="text-4xl font-extrabold text-gray-800 text-primary font-emblema_one">
+            About Us
+          </h2>
+          <p className="text-primary mt-2 font-nova_slim text-lg">
+            We are an organization dedicated to help people adopt pets and
+            facilitating the adoption process for street Animals.
           </p>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-3">
-          <div className="bg-blue-100 p-6 rounded-md shadow-md">
+          <div className="bg-blue-100 p-6 rounded-md shadow-md hover:scale-105 transition duration-300">
             <h3 className="text-2xl font-semibold text-blue-800 mb-3">
               Our Mission
             </h3>
-            <p className="text-gray-700">
-              Our mission is to connect loving homes with dogs in need. We
-              strive to make the adoption process simple and rewarding for both
-              the adopter and the dog.
+            <p className="text-gray-700 text-justify">
+              Our mission is to connect loving homes with animals in need,
+              simplifying and rewarding the adoption process for both adopters
+              and pets.
             </p>
           </div>
 
-          <div className="bg-green-100 p-6 rounded-md shadow-md">
+          <div className="bg-green-100 p-6 rounded-md shadow-md hover:scale-105 transition duration-300">
             <h3 className="text-2xl font-semibold text-green-800 mb-3">
               Adoption Process
             </h3>
-            <p className="text-gray-700">
-              We help individuals navigate the adoption process, providing
-              support and guidance. If you are interested in adopting a street
-              dog, you can fill out our adoption form to start the journey.
+            <p className="text-gray-700 text-justify">
+              Explore a variety of adorable pets - from playful kittens and
+              cuddly puppies to mature cats and dogs - all waiting to find their
+              perfect match.
             </p>
           </div>
 
-          <div className="bg-yellow-100 p-6 rounded-md shadow-md">
+          <div className="bg-yellow-100 p-6 rounded-md shadow-md hover:scale-105 transition duration-300">
             <h3 className="text-2xl font-semibold text-yellow-800 mb-3">
               Get Involved
             </h3>
-            <p className="text-gray-700">
-              Whether you want to adopt, volunteer, or support our cause, there
-              are many ways to get involved. Join us in making a positive impact
-              on the lives of dogs and the people who love them.
+            <p className="text-gray-700 text-justify">
+              Search pets with filters, adopt via our platform, upload
+              animals&apos; details for adoption, and join our community for a
+              positive impact.
             </p>
           </div>
         </div>
 
         <div className="mt-12">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-3">
-            Additional Details
-          </h3>
-          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md">
-            <p className="text-gray-700">
-              <strong>Description:</strong> Building network for adoption of
-              dogs, cats, rabbits, squirrel. You can share pictures and location
-              where the animal was found, your contact details, and other
-              details you know about that animal.
+          <AboutEngineer />
+          <div className="mb-10 bg-gradient-to-r from-[#fbf5ee] to-[#f1d7b9] p-6 rounded-md shadow-md hover:scale-105 transition duration-300">
+            <h3 className="text-2xl font-semibold text-primary mb-3 font-nova_slim text-left">
+              Our Goal
+            </h3>
+            <p className="text-primary text-justify font-nova_slim px-5">
+              Building network for adoption, where animals like dogs, cats,
+              rabbits, squirrel can be adopted by people who love them
+              <br />
+              We aim to provide an easy-to-use platform that allows pet lovers
+              to adopt Sheltered and Street Animals
+              <br />
+              Are you an indivial or vulenteer at a shelter? You can now share
+              pictures and location where the animal was found along with few
+              other details that you know about that animal.
+              <br />
+              Our platform also allows shelters to link their site while posting
+              details of their sheltered pets, which then can be used for
+              donation and endorsement purposes.
             </p>
           </div>
-          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
-            <p className="text-gray-700">
-              We are presently working in locations in Durgapur, for example,
-              Bidhannagar or Bidhannagar market to be more precise.
+
+          <div className="mb-10 bg-gradient-to-r from-[#fbf5ee] to-[#f1d7b9] p-6 rounded-md shadow-md hover:scale-105 transition duration-300">
+            <h3 className="text-2xl font-semibold text-primary mb-3 font-nova_slim text-left">
+              Our Vision
+            </h3>
+            <p className="text-primary text-justify font-nova_slim px-5">
+              Ofcourse, we don&apos;t just want to help get animals adopted but
+              erradicate the problem from it&apos;s root!
+              <br />
+              We decided to do so by breaking down the problem into smaller
+              parts and this platform is one such small solution. We are working
+              to build an eco system, were people can get instant animalcare
+              support without worrying about finanance, reduce street/sheltered
+              animal count by helping them get adopted and help Shelters get
+              donation via our platform and a lot more.
             </p>
           </div>
-          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
-            <p className="text-gray-700">
-              <strong>Pre-Adoption:</strong> Details we need for searching the
-              potential family for the animal, like in which situation the
-              animal was found, whether it was injured, and other relevant
-              information.
-            </p>
-          </div>
-          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
-            <p className="text-gray-700">
-              <strong>Post-Adoption:</strong> Please don&apos;t abandon the dogs
-              you adopt, as dogs are territorial and other dogs may cause
-              serious harm while you relocate or abandon them.
-            </p>
-          </div>
-          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
-            <p className="text-gray-700">
-              <strong>Pre-Adoption Care:</strong> If you are feeding the puppy
-              or the dog, did you deworm or vaccinate the dogs? Provide details
-              about the dates of vaccination and deworming.
-            </p>
-          </div>
-          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
+
+          {/* <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
             <p className="text-gray-700">
               Shelters provide wonderful services like deworming, vaccinating,
               and sterilizing before promoting a dog or cat for adoption.
@@ -106,20 +110,51 @@ const AboutUs = () => {
               is the NGO based in A-Zone Durgapur with another branch for ABC
               and other surgeries in B-Zone.
             </p>
+          </div> */}
+          <div className="mb-10 shadow-md hover:scale-105 transition duration-300 bg-gradient-to-r from-[#fbf5ee] to-[#f1d7b9] p-6 rounded-md ">
+            <p className="text-primary ">
+              <strong className="font-nova_slim text-2xl">
+                Developer&apos;s Details:
+              </strong>
+              <br />
+              Kumar Sahani
+              <br />
+              Email:{" "}
+              <Link
+                href={"Kumarsahani@gmail.com"}
+                className="hover:underline hover:bg-secondary px-1"
+                target="_blank"
+              >
+                Kumarsahani@gmail.com
+              </Link>
+              <br />
+              Site:{" "}
+              <Link
+                href={"https://sahani.vercel.app/"}
+                className="hover:underline hover:bg-secondary px-1"
+                target="_blank"
+              >
+                sahani.vercel.app
+              </Link>
+            </p>
           </div>
-          <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
-            <p className="text-gray-700">
-              <strong>Contact Details:</strong>
+
+          <div className="mb-10 shadow-md hover:scale-105 transition duration-300 bg-gradient-to-r from-[#fbf5ee] to-[#f1d7b9] p-6 rounded-md ">
+            <p className="text-primary ">
+              <strong className="font-nova_slim text-2xl">Support:</strong>
               <br />
               Saheli Bishnu
               <br />
               Email:{" "}
               <Link
                 href={"saheli.bishnu@gmail.com"}
-                className="hover:underline hover:bg-gray-200"
+                className="hover:underline hover:bg-secondary px-1"
+                target="_blank"
               >
                 saheli.bishnu@gmail.com
               </Link>
+              <br />
+              Site:{" "}
             </p>
           </div>
         </div>

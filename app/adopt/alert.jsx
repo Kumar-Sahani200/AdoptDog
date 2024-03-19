@@ -17,22 +17,26 @@ export default function AlertRepo(prop) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button className="bg-[#6d6d6d] hover:bg-[#11101d] text-white text-sm  py-2 px-3 rounded-full">
+        <Button className="bg-primary hover:bg-secondary text-white hover:text-black text-sm  py-2 px-3 rounded-full">
           Contact
         </Button>
       </AlertDialogTrigger>
-      <AlertDialogContent>
+      <AlertDialogContent className="bg-[#fef0e0] rounded-3xl">
         <AlertDialogHeader>
-          <AlertDialogTitle>Contact {`${prop.name}`} now</AlertDialogTitle>
-          <AlertDialogDescription>
-            Please be petient and clear in your message, calls are accepted
-            between Monday to Friday
+          <AlertDialogTitle className="text-primary font-nova_slim text-center text-xl">
+            Contact {`${prop.name}`} now
+          </AlertDialogTitle>
+          <AlertDialogDescription className="text-primary font-nova_slim">
+            Please be petient and clear in your message, calls are suggested to
+            between Monday to Friday - 11am to 5pm IST
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogCancel>Cancel</AlertDialogCancel>
+        <AlertDialogCancel className="bg-primary text-secondary  hover:bg-secondary hover:text-primary">
+          Cancel
+        </AlertDialogCancel>
         <Link
           href={phoneno}
-          className="mx-auto bg-black w-full py-3 text-white text-center"
+          className="mx-auto bg-secondary text-lg w-full py-3 text-primary text-center hover:bg-primary hover:text-secondary"
           target="_blank"
         >
           Call

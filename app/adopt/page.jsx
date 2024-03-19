@@ -32,18 +32,16 @@ export default async function ProductCard() {
   return (
     <div>
       <div className="pl-5 pr-5 mt-20 w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-        <h2
-          className={` md:text-[30px] sm:text-[30px] xs:text-[30px] text-[30px] text-black xs:leading-[32px] leading-[28px] w-full mx-auto text-center font-sans font-semibold`}
-        >
+        <h2 className="mx-auto text-center text-4xl font-semibold font-emblema_one text-secondary-foreground">
           Many happy faces are waiting to be part of your family
         </h2>
       </div>
       <div className="container mx-auto flex justify-center mb-40">
-        <div className=" mx-auto mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className=" mx-auto mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-8">
           {pets.map((pet, index) => (
             <Card
               key={index}
-              className="bg-gradient-to-r from-[#c3bcbc] to-[#f3f3f5] max-w-md rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 hover:scale-105"
+              className="bg-gradient-to-r from-[#fbf5ee] to-[#f1d7b9] max-w-md rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 hover:scale-105"
             >
               <CardHeader className="relative p-0">
                 <div className="overflow-y-scroll h-60">
@@ -55,31 +53,31 @@ export default async function ProductCard() {
                     className="w-full bg-contain bg-center "
                   />
                 </div>
-                <div className="absolute bottom-0 left-0 bg-gradient-to-r from-[#6d6d6d] to-[#11101d] p-1 text-white opacity-22">
+                <div className="absolute bottom-0 left-0 bg-gradient-to-r from-primary to-secondary px-2 py-1 text-white opacity-22 rounded-xl font-nova_slim">
                   {pet.city} - {pet.locality}
                 </div>
               </CardHeader>
-              <CardContent className="p-4">
-                <CardTitle className="text-xl mb-2  font-sans font-light">
+              <CardContent className="py-4 px-8 ">
+                <CardTitle className="text-xl mb-2 font-bold font-nova_slim text-center mx-auto">
                   Name: {pet.petName}
                 </CardTitle>
-                <CardDescription className="text-black mb-4 font-sans font-light">
-                  <span className="font-bold">Vacinated: </span>
+                <CardDescription className="text-black mb-4 font-nova_slim text-md">
+                  <span>Vacinated - </span>
                   {pet.isVacinated}
                   <br />
-                  <span className="font-bold">Bread: </span>
+                  <span>Bread - </span>
                   {pet.breadName ? pet.breadName : "Not provided"}
                   <br />
-                  <span className="font-bold">Gender: </span>
+                  <span>Gender - </span>
                   {pet.gender}
                   <br />
-                  <span className="font-bold">Disabled: </span>
+                  <span>Disabled - </span>
                   {pet.isDisabled}
                   <br />
-                  <span className="font-bold">Shelter/Street: </span>
+                  <span>Shelter/Street - </span>
                   {pet.shelterOrStreet}
                   <br />
-                  <span className="font-bold">Age Group </span>
+                  <span>Age Group - </span>
                   {pet.ageRange}
                   <br />
                 </CardDescription>
@@ -90,7 +88,7 @@ export default async function ProductCard() {
                       <Link
                         target="_blank"
                         href={pet.shelterURL}
-                        className="bg-[#6d6d6d] hover:bg-[#11101d] text-white text-sm  py-2 px-3 rounded-full"
+                        className="bg-primary hover:bg-secondary text-white hover:text-black text-sm  py-2 px-3 rounded-full"
                       >
                         Donate
                       </Link>

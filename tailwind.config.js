@@ -71,6 +71,12 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+
+      fontFamily: {
+        emblema_one: ["var(--font-emblema_one)"],
+        nova_slim: ["var(--font-nova_slim)"],
+        bubblegum_sans: ["var(--font-bubblegum_sans)"],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

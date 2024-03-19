@@ -130,7 +130,7 @@ const AboutUs = () => {
               <br />
               Site:{" "}
               <Link
-                href={"https://sahani.vercel.app/"}
+                href={"mailto:https://sahani.vercel.app/"}
                 className="hover:underline hover:bg-secondary px-1"
                 target="_blank"
               >
@@ -147,7 +147,7 @@ const AboutUs = () => {
               <br />
               Email:{" "}
               <Link
-                href={"saheli.bishnu@gmail.com"}
+                href={"mailto:saheli.bishnu@gmail.com"}
                 className="hover:underline hover:bg-secondary px-1"
                 target="_blank"
               >

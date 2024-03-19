@@ -70,13 +70,16 @@ const AdoptionForm = () => {
     };
 
     if (petImageURL) {
-      const response = await fetch(`${process.env.DomainURL}/api/formData`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        `https://adoptadoginindia.vercel.app/api/formData`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         const errorMessage = await response.text();

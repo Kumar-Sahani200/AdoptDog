@@ -1,5 +1,8 @@
 import Image from "next/image";
 import HeroGallery from "@/components/herogallery";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -20,6 +23,13 @@ export default function Home() {
           <p className="m-0 max-w-[80ch] text-3xl font-bubblegum_sans text-secondary-foreground">
             Find Your Furry Friend and Make a Difference
           </p>
+          <div>
+            <Button className="text-white font-extrabold w-fit bg-secondary hover:text-secondary hover:bg-primary my-5">
+              <Link href={"/adopt"} className="flex items-center">
+                <p className="pr-2">Explore Now {"  "} </p> <FaArrowRight />
+              </Link>
+            </Button>
+          </div>
 
           <HeroGallery />
         </div>

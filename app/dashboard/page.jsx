@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Dashboard",
+  description: "The official Adopt Paw page, build for pet adoption and more",
+};
+
 export default function ProductCard() {
   return (
     <div>

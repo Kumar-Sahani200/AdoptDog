@@ -26,6 +26,11 @@ const getData = async () => {
   }
 };
 
+export const metadata = {
+  title: "Adopt",
+  description: "The official Adopt Paw page, build for pet adoption and more",
+};
+
 export default async function ProductCard() {
   const pets = await getData();
 

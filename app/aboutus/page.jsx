@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { AboutEngineer } from "@/components/aboutEngineer";
+
+export const metadata = {
+  title: "About us",
+  description: "The official Adopt Paw page, build for pet adoption and more",
+};
 
 const AboutUs = () => {
   return (

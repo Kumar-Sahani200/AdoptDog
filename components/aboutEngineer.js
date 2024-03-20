@@ -7,7 +7,7 @@ export const AboutEngineer = () => {
     <div className="my-20">
       {" "}
       <h3 className="text-3xl font-semibold text-gray-800 mb-3 font-nova_slim text-center">
-        Engineers Behind This Product:
+        Engineers Behind Adopt Paw
       </h3>
       <div className=" mt-8 flex max-w-4xl mx-auto justify-center">
         <div>
@@ -18,7 +18,7 @@ export const AboutEngineer = () => {
               width={1600}
               height={1600}
               objectFit="cover"
-              className="w-2/4 lg:w-2/3 xl:w-2/3 object-cover rounded-2xl mx-auto shadow-md hover:scale-105 transition duration-300"
+              className="w-2/4 h-full lg:w-full xl:w-2/3 object-cover rounded-2xl mx-auto shadow-md hover:scale-105 transition duration-300"
             />
           </Link>
         </div>

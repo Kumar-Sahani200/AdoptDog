@@ -37,12 +37,15 @@ let hasAdoptedPets = 0;
 
 const adopted = async () => {
   const pets = await getData();
-  for (let index = 0; index < pets.length; index++) {
-    pets.map((pet, index) => {
-      if (pet.isAdopted == true) {
-        hasAdoptedPets = hasAdoptedPets + 1;
-      }
-    });
+
+  if (pets != null) {
+    for (let index = 0; index < pets.length; index++) {
+      pets.map((pet, index) => {
+        if (pet.isAdopted == true) {
+          hasAdoptedPets = hasAdoptedPets + 1;
+        }
+      });
+    }
   }
 };
 

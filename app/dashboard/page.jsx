@@ -105,7 +105,7 @@ export default async function ProductCard() {
                   <div>
                     <Button className="mx-auto flex text-white font-extrabold w-fit bg-secondary hover:text-secondary hover:bg-primary my-5">
                       <Link
-                        href={"/adopt"}
+                        href={"/post"}
                         className="flex items-center text-xl"
                       >
                         <p className="pr-2">Post {"  "} </p> <IoIosAddCircle />

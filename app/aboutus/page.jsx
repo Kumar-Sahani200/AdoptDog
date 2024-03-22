@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { AboutEngineer } from "@/components/aboutEngineer";
+import { AboutBackbone } from "@/components/aboutBackbone";
 
 export const metadata = {
   title: "About us",
@@ -16,8 +17,9 @@ const AboutUs = () => {
             About Us
           </h2>
           <p className="text-primary mt-2 font-nova_slim text-lg">
-            We are an organization dedicated to help people adopt pets and
-            facilitating the adoption process for street Animals.
+            We are a group of people dedicated to helping heroes like you adopt
+            pets and facilitating the adoption process for street and sheltered
+            animals
           </p>
         </div>
 
@@ -58,6 +60,7 @@ const AboutUs = () => {
 
         <div className="mt-12">
           <AboutEngineer />
+          <AboutBackbone />
           <div className="mb-10 bg-gradient-to-r from-[#fbf5ee] to-[#f1d7b9] p-6 rounded-md shadow-md hover:scale-105 transition duration-300">
             <h3 className="text-2xl font-semibold text-primary mb-3 font-nova_slim text-left">
               Our Goal
@@ -69,7 +72,7 @@ const AboutUs = () => {
               We aim to provide an easy-to-use platform that allows pet lovers
               to adopt Sheltered and Street Animals
               <br />
-              Are you an indivial or vulenteer at a shelter? You can now share
+              Are you an Individual or Volunteer at a shelter? You can now share
               pictures and location where the animal was found along with few
               other details that you know about that animal.
               <br />
@@ -96,70 +99,93 @@ const AboutUs = () => {
             </p>
           </div>
 
-          {/* <div className="bg-[#fff3e5] p-6 rounded-md shadow-md mt-4">
-            <p className="text-gray-700">
-              Shelters provide wonderful services like deworming, vaccinating,
-              and sterilizing before promoting a dog or cat for adoption.
-              Durgapur{" "}
-              <span>
-                <Link
-                  href="https://www.instagram.com/aashrayforanimals/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:bg-gray-200"
-                >
-                  Aashray For Animals
-                </Link>
-              </span>{" "}
-              is the NGO based in A-Zone Durgapur with another branch for ABC
-              and other surgeries in B-Zone.
-            </p>
-          </div> */}
           <div className="mb-10 shadow-md hover:scale-105 transition duration-300 bg-gradient-to-r from-[#fbf5ee] to-[#f1d7b9] p-6 rounded-md ">
-            <p className="text-primary ">
+            <div className="text-primary ">
               <strong className="font-nova_slim text-2xl">
                 Developer&apos;s Details:
               </strong>
               <br />
-              Kumar Sahani
-              <br />
-              Email:{" "}
-              <Link
-                href={"mailto:Kumarsahani@gmail.com"}
-                className="hover:underline hover:bg-secondary px-1"
-                target="_blank"
-              >
-                Kumarsahani@gmail.com
-              </Link>
-              <br />
-              Site:{" "}
-              <Link
-                href={"https://sahani.vercel.app/"}
-                className="hover:underline hover:bg-secondary px-1"
-                target="_blank"
-              >
-                sahani.vercel.app
-              </Link>
-            </p>
+              <div className="px-5 mt-2">
+                Kumar Sahani
+                <br />
+                Email:{" "}
+                <Link
+                  href={"mailto:Kumarsahani@gmail.com"}
+                  className="hover:underline hover:bg-secondary px-1"
+                  target="_blank"
+                >
+                  Kumarsahani@gmail.com
+                </Link>
+                <br />
+                Contact:
+                <Link
+                  href={`https://www.linkedin.com/in/kumar-sahani/`}
+                  className="hover:underline hover:bg-secondary px-1"
+                  target="_blank"
+                >
+                  LinkedIn,
+                </Link>
+                <Link
+                  href="https://wa.me/8143916500"
+                  className="hover:underline hover:bg-secondary px-1"
+                  target="_blank"
+                >
+                  Whatsapp
+                </Link>
+                <Link
+                  href={`https://www.instagram.com/schrodinger_mind/`}
+                  className="hover:underline hover:bg-secondary px-1"
+                  target="_blank"
+                >
+                  Instagram
+                </Link>
+                <br />
+                Site:{" "}
+                <Link
+                  href={"https://sahani.vercel.app/"}
+                  className="hover:underline hover:bg-secondary px-1"
+                  target="_blank"
+                >
+                  sahani.vercel.app
+                </Link>
+              </div>
+            </div>
           </div>
 
           <div className="mb-10 shadow-md hover:scale-105 transition duration-300 bg-gradient-to-r from-[#fbf5ee] to-[#f1d7b9] p-6 rounded-md ">
-            <p className="text-primary ">
+            <div className="text-primary ">
               <strong className="font-nova_slim text-2xl">Support:</strong>
               <br />
-              Saheli Bishnu
-              <br />
-              Email:{" "}
-              <Link
-                href={"mailto:saheli.bishnu@gmail.com"}
-                className="hover:underline hover:bg-secondary px-1"
-                target="_blank"
-              >
-                saheli.bishnu@gmail.com
-              </Link>
-              <br />
-              Site:{" "}
-            </p>
+
+              <div className="px-5 mt-2">
+                Saheli Bishnu
+                <br />
+                Email:{" "}
+                <Link
+                  href={"mailto:saheli.bishnu@gmail.com"}
+                  className="hover:underline hover:bg-secondary px-1"
+                  target="_blank"
+                >
+                  saheli.bishnu@gmail.com
+                </Link>
+                <br />
+                Contact:
+                <Link
+                  href={`https://www.linkedin.com/in/saheli-bishnu/`}
+                  className="hover:underline hover:bg-secondary px-1"
+                  target="_blank"
+                >
+                  LinkedIn
+                </Link>
+                <Link
+                  href={`https://www.instagram.com/saheli.bishnu/?utm_source=qr&r=nametag`}
+                  className="hover:underline hover:bg-secondary px-1"
+                  target="_blank"
+                >
+                  Instagram
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

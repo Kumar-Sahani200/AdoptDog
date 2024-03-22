@@ -8,7 +8,7 @@ export default authMiddleware({
     "/adopt",
     "/api/webhooks(.*)",
     "/api/createUser",
-    "/api/formData",
+    "/api/formData(.*)",
     "/api/edgestore(.*)",
   ],
   // Routes that can always be accessed, and have

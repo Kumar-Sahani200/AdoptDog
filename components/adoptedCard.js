@@ -26,7 +26,7 @@ const AdoptedCard = (props) => {
 
     if (isDeleteConfirmed) {
       await fetch(
-        `${process.env.DomainURL}/api/formData/${pet.clerkUserID}/${pet._id}`,
+        `https://adoptadoginindia.vercel.app/api/formData/${pet.clerkUserID}/${pet._id}`,
 
         {
           method: "DELETE",

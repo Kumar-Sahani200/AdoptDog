@@ -16,9 +16,12 @@ const getData = async () => {
   const { userId } = auth();
 
   try {
-    const res = await fetch(`${process.env.DomainURL}/api/formData/${userId}`, {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      `https://adoptadoginindia.vercel.app/api/formData/${userId}`,
+      {
+        cache: "no-store",
+      }
+    );
 
     if (!res.ok) {
       throw new Error("Failed to fetch data");

@@ -24,7 +24,7 @@ const PostCard = (props) => {
 
     if (isAdoptedConfirmed) {
       await fetch(
-        `https://adoptadoginindia.vercel.app/api/formData/${pet.clerkUserID}/${pet._id}`,
+        `https://adoptpaw.in/api/formData/${pet.clerkUserID}/${pet._id}`,
 
         {
           method: "PATCH",
@@ -44,7 +44,7 @@ const PostCard = (props) => {
 
     if (isDeleteConfirmed) {
       await fetch(
-        `https://adoptadoginindia.vercel.app/api/formData/${pet.clerkUserID}/${pet._id}`,
+        `https://adoptpaw.in/api/formData/${pet.clerkUserID}/${pet._id}`,
 
         {
           method: "DELETE",

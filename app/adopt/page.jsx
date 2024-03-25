@@ -13,12 +13,9 @@ import AdoptCard from "@/components/adoptCard";
 
 const getData = async () => {
   try {
-    const res = await fetch(
-      `https://adoptadoginindia.vercel.app/api/formData`,
-      {
-        cache: "no-store",
-      }
-    );
+    const res = await fetch(`https://adoptpaw.in/api/formData`, {
+      cache: "no-store",
+    });
 
     if (!res.ok) {
       throw new Error("Failed to fetch  data");

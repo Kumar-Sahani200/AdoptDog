@@ -69,16 +69,13 @@ export async function POST(req) {
       console.log(UserData);
 
       // making a post request to createUser.ts with the above data
-      const response = await fetch(
-        `https://adoptadoginindia.vercel.app/api/createUser`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(UserData),
-        }
-      );
+      const response = await fetch(`https://adoptpaw.in/api/createUser`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(UserData),
+      });
 
       if (!response.ok) {
         const errorMessage = await response.text();

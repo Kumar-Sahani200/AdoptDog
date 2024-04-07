@@ -26,11 +26,13 @@ Then, run the development server:
 npm run dev
 ```
 
-Finally, you can run the production server:
+Or, you can run the production server:
 
 ```bash
 npm run build
 ```
+
+Open http://localhost:3000 with your browser to see the result.
 
 ## Tech Stack
 

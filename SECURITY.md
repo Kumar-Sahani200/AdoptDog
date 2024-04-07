@@ -2,20 +2,26 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Next JS(app router)
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 14.x    | :white_check_mark: |
+| 13.x    | :white_check_mark: |
+| 12.x    | :x:                |
+| 11.x    | :x:                |
+
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you discover a security vulnerability in AdoptPaw, please report it to us by creating an issue on GitHub. We take security vulnerabilities seriously and will investigate promptly.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+### Reporting Process
+
+1. **Create an Issue:** Go to the [Issues](https://github.com/kumar-Sahani200/AdoptDog/issues) tab on our GitHub repository and click "New Issue".
+   
+2. **Describe the Issue:** Provide a detailed description of the vulnerability, including steps to reproduce it if possible.
+
+3. **Expectations:** You can expect that we will review your report and respond promptly. If the vulnerability is accepted, we will work on a fix and release a patch as soon as possible. If the vulnerability is declined, we will provide an explanation.
+
+Thank you for helping us keep AdoptPaw secure!

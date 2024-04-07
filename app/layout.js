@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { EdgeStoreProvider } from "@/lib/edgestore";
 import { Toaster } from "@/components/ui/toaster";
 import { emblema_one, nova_slim, bubblegum_sans } from "@/utils/fonts";
+import Footer from "@/components/partials/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
             {children}
             <Toaster />
           </EdgeStoreProvider>
+          <Footer />
         </body>
       </html>
     </ClerkProvider>

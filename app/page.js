@@ -3,6 +3,8 @@ import HeroGallery from "@/components/herogallery";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa";
+import Youtube from "@/components/shortcuts/Youtube";
+import { FAQ } from "@/components/shortcuts/Faq";
 
 export default function Home() {
   return (
@@ -31,7 +33,11 @@ export default function Home() {
             </Button>
           </div>
 
+          <Youtube />
+
           <HeroGallery />
+
+          <FAQ />
         </div>
       </main>
     </div>

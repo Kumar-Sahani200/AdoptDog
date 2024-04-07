@@ -10,6 +10,8 @@ export default authMiddleware({
     "/api/createUser",
     "/api/formData(.*)",
     "/api/edgestore(.*)",
+    "/guidelines",
+    "/privacypolicy",
   ],
   // Routes that can always be accessed, and have
   // no authentication information

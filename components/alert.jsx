@@ -29,7 +29,16 @@ export default function CallAlert(prop) {
           </AlertDialogTitle>
           <AlertDialogDescription className="text-primary font-nova_slim">
             Please be petient and clear in your message, calls are suggested to
-            between Monday to Friday - 11am to 5pm IST
+            between Monday to Friday - 11am to 5pm IST Before you adopt.
+            <br />
+            Please Read and agree to our{" "}
+            <Link
+              href={"/guidelines"}
+              className="underline hover:text-secondary"
+            >
+              guidelines
+            </Link>{" "}
+            before proceeding.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogCancel className="bg-primary text-secondary  hover:bg-secondary hover:text-primary">

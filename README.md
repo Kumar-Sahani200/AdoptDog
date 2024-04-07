@@ -62,4 +62,4 @@ We would like to thank Kumar Sahani and Saheli Bishnu for their contributions to
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](LICENSE).

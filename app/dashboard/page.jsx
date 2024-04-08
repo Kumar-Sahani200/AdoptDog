@@ -88,7 +88,7 @@ export default async function ProductCard() {
             <TabsContent value="posts">
               {pets ? (
                 <div className="mt-14">
-                  {pets.map((pet, index) => (
+                  {pets.reverse().map((pet, index) => (
                     <div key={index} className="my-5">
                       <PostCard pet={pet} />
                     </div>
@@ -115,7 +115,7 @@ export default async function ProductCard() {
             <TabsContent value="adopted">
               {pets && hasAdoptedPets > 0 ? (
                 <div className="mt-14">
-                  {pets.map((pet, index) => (
+                  {pets.reverse().map((pet, index) => (
                     <div key={index} className="my-5">
                       <AdoptedCard pet={pet} />
                     </div>

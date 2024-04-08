@@ -44,7 +44,7 @@ export default async function ProductCard() {
       </div>
       <div className="container mx-auto flex justify-center mb-40">
         <div className=" mx-auto mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-8">
-          {pets.map((pet, index) => (
+          {pets.reverse().map((pet, index) => (
             <div key={index}>
               <AdoptCard pet={pet} />
             </div>

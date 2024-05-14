@@ -10,6 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AlertRepo from "./alert";
 import AdoptCard from "@/components/adoptCard";
+import { isAborted } from "zod";
 
 const getData = async () => {
   try {
@@ -35,6 +36,15 @@ export const metadata = {
 export default async function ProductCard() {
   const pets = await getData();
 
+  function filterByAdoptionStatus(pets) {
+    // Filter pets where isAdopted is false
+    return pets.filter((pet) => pet.isAdopted === false);
+  }
+
+  const filteredPets = filterByAdoptionStatus(pets);
+
+  console.log(filteredPets);
+
   return (
     <div>
       <div className="pl-5 pr-5 mt-20 w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
@@ -44,7 +54,7 @@ export default async function ProductCard() {
       </div>
       <div className="container mx-auto flex justify-center mb-40">
         <div className=" mx-auto mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-8">
-          {pets.reverse().map((pet, index) => (
+          {filteredPets.reverse().map((pet, index) => (
             <div key={index}>
               <AdoptCard pet={pet} />
             </div>

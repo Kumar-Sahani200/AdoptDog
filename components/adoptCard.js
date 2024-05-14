@@ -16,7 +16,7 @@ const AdoptCard = (props) => {
   const { pet } = props;
 
   if (pet.isAdopted) {
-    return <></>;
+    return null;
   }
   return (
     <div>

@@ -10,6 +10,7 @@ export default authMiddleware({
     "/api/createUser",
     "/api/formData(.*)",
     "/api/edgestore(.*)",
+    "/api/stats",
     "/guidelines",
     "/privacypolicy",
   ],

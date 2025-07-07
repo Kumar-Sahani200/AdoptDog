@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa";
 import Youtube from "@/components/shortcuts/Youtube";
 import { FAQ } from "@/components/shortcuts/Faq";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
@@ -28,12 +29,14 @@ export default function Home() {
           <div>
             <Button className="text-white font-extrabold w-fit bg-secondary hover:text-secondary hover:bg-primary my-5">
               <Link href={"/adopt"} className="flex items-center">
-                <p className="pr-2">Explore Now {"  "} </p> <FaArrowRight />
+                <p className="pr-2">Adopt a Pet {"  "} </p> <FaArrowRight />
               </Link>
             </Button>
           </div>
 
           <Youtube />
+
+          <Stats />
 
           <HeroGallery />
 

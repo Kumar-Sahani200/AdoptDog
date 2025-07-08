@@ -9,7 +9,7 @@ import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 const menus = [
   { title: "Home", path: "/" },
-  { title: "Adopt", path: "/adopt" },
+  { title: "Pets", path: "/adopt" },
   { title: "About Us", path: "/aboutus" },
   { title: "Post", path: "/post" },
 ];
